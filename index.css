@@ -1,0 +1,137 @@
+body {
+  background-color:#FFF500;
+  background-image:url(backgroundframe.svg);
+ background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:100%;
+}
+input {display:none;}
+
+
+@font-face {
+    font-family: 'True Lies'; /*a name to be used later*/
+    src: url('fonts/True Lies.ttf'); /*URL to font*/
+	
+}
+@font-face {
+    font-family: 'Oxanium'; /*a name to be used later*/
+    src: url('fonts/Oxanium-Regular.ttf'); /*URL to font*/
+	
+}
+@font-face {
+    font-family: 'RobotoCondensed'; /*a name to be used later*/
+    src: url('fonts/RobotoCondensed-Regular.ttf'); /*URL to font*/
+	
+}
+
+#hindex {font-family:True Lies;
+font-size:7vw;
+
+
+}
+
+#hindex2 {font-family:Oxanium;
+margin-top:-20px;
+font-size:2.5vw;
+margin-left:110px;
+}
+#maintext {
+	font-family:RobotoCondensed;
+	margin-top:-30px;
+	font-size:115%;
+	text-align:left;
+
+}
+
+nav {background-image:url(header.png);
+ background-repeat: round;
+/*   background-size:100%; */
+  
+  line-height:105px;
+  }
+nav ul {
+	
+  list-style: none;
+  text-align: center;
+    padding: 0;
+  margin: 0;
+}
+
+nav li {
+    width: 23%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 140%;
+    display: inline-block;
+  }
+
+nav li:last-child{
+	    border-right: none;
+}
+
+nav li li{
+	    border-right: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  /*padding-left: 15px;*/
+  transition: .5s background-color;
+}
+
+nav a:hover {
+  background-color: #FFF500;
+	 color:#000000;
+}
+
+nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+nav li li {
+  font-size: 1em;
+
+}
+
+nav > ul > li {
+   text-align: center;
+}
+
+nav > ul > li > a {
+    padding-left: 0;
+}
+
+/* Sub Menus */
+nav li ul {
+    position: absolute;
+    display: none;
+    width:inherit;
+
+}
+
+nav li:hover ul {
+   display: block;
+   z-index:1;
+}
+
+nav li ul li {
+   display: block;
+   width:100%;
+   background-color: #000000;
+  
+ }
+ 
+#footer {
+
+	background-image:url(pictures/footer.png);
+	text-align: center;
+	height:90px;
+	background-repeat: round;
+/* 	  background-size:100%; */
+}
