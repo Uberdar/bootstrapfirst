@@ -1,0 +1,161 @@
+body {
+  background-color:#FFF500;
+  background-image:url(../pictures/index/backgroundframe.svg);
+ background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:100%;
+}
+@font-face {
+  font-family: 'Oxanium-Regular';
+  src: url('../fonts/oxanium/Oxanium-Regular.eot');
+  src: url('../fonts/oxanium/Oxanium-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/oxanium/Oxanium-Regular.svg#Oxanium-Regular') format('svg'),
+       url('../fonts/oxanium/Oxanium-Regular.ttf') format('truetype'),
+       url('../fonts/oxanium/Oxanium-Regular.woff') format('woff'),
+       url('../fonts/oxanium/Oxanium-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensed-Regular';
+  src: url('../fonts/roboto/RobotoCondensed-Regular.eot');
+  src: url('../fonts/roboto/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/roboto/RobotoCondensed-Regular.svg#RobotoCondensed-Regular') format('svg'),
+       url('../fonts/roboto/RobotoCondensed-Regular.ttf') format('truetype'),
+       url('../fonts/roboto/RobotoCondensed-Regular.woff') format('woff'),
+       url('../fonts/roboto/RobotoCondensed-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'True Lies';
+  src: url('../fonts/true/True Lies.eot');
+  src: url('../fonts/true/True Lies.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/true/True Lies.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TrueLies';
+  src: url('../fonts/true/TrueLies.svg#TrueLies') format('svg'),
+       url('../fonts/true/TrueLies.ttf') format('truetype'),
+       url('../fonts/true/TrueLies.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (min-width: 768px) {
+nav {
+	background-image:url(../pictures/header.png);
+  background-attachment: fixed;
+  background-size:100%;
+  background-repeat:repeat-x;
+  height:100px;
+}
+.menu{
+	display: flex; 
+	flex-direction:row;
+	justify-content: space-around;
+		   background-color: #000000;
+}
+.menu li {width:100%;}
+
+.hiddenmenu {
+	display:none;
+}
+
+.menu a {
+	display:block;
+	text-decoration:none;
+	color:#ffffff;
+	text-align:center;
+	font-size:2vw;
+		font-family:RobotoCondensed-Regular, Arial, sans-serif;	
+}
+.menu a:hover {
+	   background-color: #fff500;
+	   color:#000000;
+}
+
+.dropoutmenu:hover .hiddenmenu{
+	display: flex; 
+	flex-direction:column;
+		position:absolute;
+		  width:25%;
+			background-color:#000000;
+}
+}
+@media screen and (max-width: 767px) {
+.menu {
+	padding-left:10px;
+	display:flex;
+	flex-direction:column;
+	background:#000000;
+	width:120px;
+}
+.hiddenmenu {
+	padding-left:30px;
+}
+.menu a {
+display:block;
+font-family:RobotoCondensed-Regular, Arial,Sans-serif;
+text-decoration:none;
+color:#ffffff;
+line-height:1.2;
+	
+}
+.menu a:hover {
+	background-color:#fff500;
+	color:#000000;
+}	
+
+}
+/* nav a{
+	display:block;
+	text-decoration:none;
+	color:#ffffff;
+
+}
+nav a:hover {
+	   background-color: #fff500;
+	   color:#000000;
+}
+
+
+nav  li {
+	display:inline-block;
+	width:24%;
+	text-align:center;
+	    line-height: 50px;
+
+}
+
+nav ul {
+	
+  list-style: none;
+  text-align: center;
+    padding: 0;
+  margin: 0;
+}
+
+
+
+nav li ul {
+	position:absolute;
+    display: none;
+    width:inherit;
+
+}
+
+nav li:hover ul {
+   display: block;
+   z-index:1;
+}
+
+nav li ul li {
+   display: block;
+   width:100%;
+   background-color: #000000;
+ }
+ */
