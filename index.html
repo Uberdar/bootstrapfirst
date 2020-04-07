@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
+
  <head>
    <title>!DOCTYPE</title>
    <meta charset="utf-8">
-       <link rel="stylesheet" href="css/reset.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/index.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <script src="js/index.js"></script>
 
  </head>
  <body>
-<div #id="menu">
- <nav >
-    <ul class="menu">
-        <li ><a href="index.html">Main</a></li>
-        <li class="dropoutmenu"><a href="#">Classes</a>
-          <ul class="hiddenmenu">
-			<li><a href="solo.html">Solo</a></li>
-            <li><a href="tech.html">Tech</a></li>
-            <li><a href="fixer.html">Fixer</a></li>
-			<li><a href="nomad.html">Nomad</a></li>
-			<li><a href="rockerboys.html" id="rockchange">Rockerboys</a></li>
-			<li><a href="cops.html">Cops</a></li>
-			<li><a href="media.html">Media</a></li>
-			<li><a href="corporates.html" id="corpchange">Corporates</a></li>
-			<li><a href="netrunners.html" id="netchange">Netrunners</a></li>
-          </ul>
-        </li>
-        <li ><a href="calendar.html" >Calendar</a></li>
-        <li ><a href="gallery.html">Gallery</a></li>
-      </ul>
-	  </nav>
+ 
+  <nav class="nav">
+    <ul  class="menu">
+      <li><a href="index.html">Main</a></li>
+      <li class="dropoutmenu"><a href="#">Classes</a>
+        <ul class="hiddenmenu">
+          <li><a href="solo.html">Solo</a></li>
+          <li><a href="tech.html">Tech</a></li>
+          <li><a href="fixer.html">Fixer</a></li>
+          <li><a href="nomad.html">Nomad</a></li>
+          <li><a href="rockerboys.html" id="rockchange">Rockerboys</a></li>
+          <li><a href="cops.html">Cops</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="corporates.html" id="corpchange">Corporates</a></li>
+          <li><a href="netrunners.html" id="netchange">Netrunners</a></li>
+        </ul>
+      </li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <div class="hamicon">
+  <button  class="burgerbutton"  onclick="buttonClick()"><i class="material-icons">menu</i>
+  </button>
 </div>
 <div id="leftblock"></div>
 <div id="rightblock"></div>
