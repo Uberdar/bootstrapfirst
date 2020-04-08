@@ -1,8 +1,13 @@
-function buttonClick() {
- var v = document.getElementsByClassName("menu");
- if (v[0].style.display === "inline-block") {
- v[0].style.display = "none"
- }else {
-	  v[0].style.display = "inline-block"
- }
-}
+var burger = document.getElementById("js-burger");
+var menu = document.getElementById("js-menu");
+
+burger.addEventListener("click", function (e) {
+  e.stopPropagation();
+  menu.classList.toggle("active");
+  burger.classList.toggle("active");
+});
+
+document.addEventListener("click", function (e) {
+  menu.classList.remove("active");
+  burger.classList.remove("active");
+});

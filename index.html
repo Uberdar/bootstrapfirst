@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 
- <head>
-   <title>!DOCTYPE</title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/index.css">
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <script src="js/index.js"></script>
+<head>
+  <title>!DOCTYPE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
- </head>
- <body>
- 
+
+</head>
+
+<body>
+
   <nav class="nav">
-    <ul  class="menu">
+    <ul class="menu" id="js-menu">
       <li><a href="index.html">Main</a></li>
       <li class="dropoutmenu"><a href="#">Classes</a>
         <ul class="hiddenmenu">
@@ -32,13 +34,91 @@
       <li><a href="calendar.html">Calendar</a></li>
       <li><a href="gallery.html">Gallery</a></li>
     </ul>
+    <button class="burgerbutton" id="js-burger">
+      <span class="burgerbutton__line"></span>
+      <span class="burgerbutton__line"></span>
+      <span class="burgerbutton__line"></span>
+    </button>
   </nav>
-  <div class="hamicon">
-  <button  class="burgerbutton"  onclick="buttonClick()"><i class="material-icons">menu</i>
-  </button>
+  <div id="mainblock" class="mainblock">
+<div class="leftone">
+  <h1>Cyberpunk</h1>
+  <h3>board game</h3>
+          <p>
+    Cyberpunk is a cyberpunk tabletop role-playing game
+     written by Mike Pondsmith and published by R. Talsorian
+      Games in 1988. A popular second edition, Cyberpunk 2020,
+       was published in 1990, and a number of further editions
+        have been published. In 1990, R. Talsorian Games released
+         the second edition of the game, titled Cyberpunk 2020, which
+          featured updated rules for combat, Netrunning, and character
+           generation. 
+          </p>
+           <p>The game's timeline was also retconned to accommodate
+            the German reunification in 1990. It was released as a boxed
+             set that contained a 222-page softcover book, and a 
+             24-page reference guide and adventure. R. Talsorian Games
+              released two revised versions: Cyberpunk 2020 version 2.00
+               (1992), and Cyberpunk 2020 version 2.01 (1993). A total
+                of 28 rules supplements and sourcebooks, and 6 adventures
+                 were also published by R. Talsorian Games between 1993
+                  and 1996.
+            </p> 
+            <p>In addition, Atlas Games published twelve 
+                  adventures under license between 1991 and 1993. Six 
+                  novels set in the Cyberpunk 2020 world were also published
+                   between 1993 and 1994. Dream Pod 9 released Night's Edge in
+                    1992, taking the Cyberpunk 2020 setting and adding a horror theme
+                    , including vampires and werewolves. Dream Pod 9 published 10
+                     other supplements and adventures in this setting between 1992
+                      and 1995.
+              </p> 
+              <p>Cyberpunk 2020 is set in the same world as the original
+                       edition, but the time has been moved forward seven years, from
+                        2013 to 2020. Although the game referee can set the game anywhere in this world,
+                         the default setting is the fictional Night City, a city of five million people 
+                         on the west coast of the United States located between Los Angeles and San Francisco.
+                </p>
 </div>
-<div id="leftblock"></div>
-<div id="rightblock"></div>
-<div id="footer"></div>
- </body> 
+<div class="rightone">
+<!--   / *
+  <section class="vertical-center slider slick-initialized slick-slider slick-dotted slick-vertical"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button><div class="slick-list draggable" style="height: 366px; padding: 50px 0px;"><div class="slick-track" style="opacity: 1; height: 5852px; transform: translate3d(0px, -1064px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 913px;" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+    <img src="http://placehold.it/350x100?text=9">
+  </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 913px;" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+    <img src="http://placehold.it/350x100?text=10">
+  </div></div></div><div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 913px;" role="tabpanel" id="slick-slide30" tabindex="-1" aria-describedby="slick-slide-control30"><div><div style="width: 100%; display: inline-block;">
+    <img src="http://placehold.it/350x100?text=1">
+  </div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 913px;" role="tabpanel" id="slick-slide31" aria-describedby="slick-slide-control31" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+    <img src="http://placehold.it/350x100?text=2">
+  </div></div></div><div class="slick-slide slick-current slick-active slick-center" data-slick-index="2" aria-hidden="false" style="width: 913px;" role="tabpanel" id="slick-slide32" aria-describedby="slick-slide-control32"><div><div style="width: 100%; display: inline-block;">
+    <img src="http://placehold.it/350x100?text=3">
+  </div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 913px;" tabindex="-1" role="tabpanel" id="slick-slide33" aria-describedby="slick-slide-control33"><div><div style="width: 100%; display: inline-block;">
+    <img src="http://placehold.it/350x100?text=4">
+  </div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 913px;" tabindex="-1" role="tabpanel" id="slick-slide34" aria-describedby="slick-slide-control34"><div><div style="width: 100%; display: inline-block;">
+    <img src="http://placehold.it/350x100?text=5">
+  </div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button><ul class="slick-dots" style="display: block;" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control30" aria-controls="slick-slide30" aria-label="1 of 10" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control31" aria-controls="slick-slide31" aria-label="2 of 10" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control32" aria-controls="slick-slide32" aria-label="3 of 10" tabindex="0" aria-selected="true">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control33" aria-controls="slick-slide33" aria-label="4 of 10" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control34" aria-controls="slick-slide34" aria-label="5 of 10" tabindex="-1">5</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control35" aria-controls="slick-slide35" aria-label="6 of 10" tabindex="-1">6</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control36" aria-controls="slick-slide36" aria-label="7 of 10" tabindex="-1">7</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control37" aria-controls="slick-slide37" aria-label="8 of 10" tabindex="-1">8</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control38" aria-controls="slick-slide38" aria-label="9 of 10" tabindex="-1">9</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control39" aria-controls="slick-slide39" aria-label="10 of 10" tabindex="-1">10</button></li></ul></section>
+* / -->
+
+  </div>
+  </div>
+
+  <div id="footer" class="footer">
+footer
+  </div>
+
+
+<!--   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+$('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+  </script> -->
+  <script src="js/index.js"></script>
+</body>
+
 </html>
